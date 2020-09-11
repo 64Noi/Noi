@@ -21,4 +21,5 @@ async def on_message(message):
         await message.delete()
     await bot.process_commands(message)
 
-bot.run("")
+access_token = os.environ["BOT_TOKEN"]
+bot.run("access_token")
